@@ -1,0 +1,28 @@
+@import "../node_modules/bootstrap/scss/_functions.scss";
+@import "../node_modules/bootstrap/scss/_variables.scss";
+@import "../node_modules/bootstrap/scss/mixins/_breakpoints.scss";
+@import "../node_modules/rfs/scss";
+
+@include media-breakpoint-down(xs) { 
+    .video {
+        padding-top: 80%;
+    }
+}
+
+@include media-breakpoint-down(sm) { 
+    .video {
+        padding-top: 60%;
+    }
+}
+@include media-breakpoint-down(md) { .video {
+        padding-top: 40%;
+    } }
+@include media-breakpoint-down(lg) { .video {
+        padding-top: 30%;
+    } }
+
+@include media-breakpoint-down(sm) {
+    .title {
+    @include font-size(2rem);
+}
+}
